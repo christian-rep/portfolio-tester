@@ -107,43 +107,51 @@
             </div>
         </section>
 
-            <!-- Sección Contacto -->
-    <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <form class="formulario-contacto">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            
-            <div class="campo">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="campo">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
-            </div>
-            
-            <div class="campo">
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" name="fecha">
-            </div>
-            
-            <div class="campo">
-                <label for="archivo">Adjuntar archivo:</label>
-                <input type="file" id="archivo" name="archivo">
-            </div>
-            
-            <div class="campo checkbox">
-                <input type="checkbox" id="terminos" name="terminos" required>
-                <label for="terminos">Acepto los términos y condiciones</label>
-            </div>
-            
-            <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-    </section>
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto" data-testid="contact-section">
+            <h2>Contacto</h2>
+            <form class="formulario-contacto" id="contact-form" data-testid="contact-form">
+                <div class="campo" data-testid="name-field">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required 
+                           data-testid="name-input" aria-describedby="name-error">
+                </div>
+                
+                <div class="campo" data-testid="email-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required 
+                           data-testid="email-input" aria-describedby="email-error">
+                </div>
+                
+                <div class="campo" data-testid="phone-field">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" 
+                           data-testid="phone-input">
+                </div>
+                
+                <div class="campo" data-testid="date-field">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" 
+                           data-testid="date-input">
+                </div>
+                
+                <div class="campo" data-testid="file-field">
+                    <label for="archivo">Adjuntar archivo:</label>
+                    <input type="file" id="archivo" name="archivo" 
+                           data-testid="file-input">
+                </div>
+                
+                <div class="campo checkbox" data-testid="terms-field">
+                    <input type="checkbox" id="terminos" name="terminos" required 
+                           data-testid="terms-checkbox">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                
+                <button type="submit" class="btn-enviar" data-testid="submit-button">
+                    Enviar
+                </button>
+            </form>
+        </section>
    <!-- Footer -->
 <footer class="footer">
     <div class="redes-sociales">
