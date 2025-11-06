@@ -275,3 +275,104 @@ body {
 .btn-enviar:hover {
     background-color: #34495e;
 }
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.redes-sociales {
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: #bdc3c7;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #3498db;
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+/* ===== DISEÑO RESPONSIVE ===== */
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    .navbar a {
+        display: block;
+        text-align: center;
+        padding: 0.8rem;
+    }
+    
+    .presentacion,
+    .formacion-academica,
+    .experiencia-laboral,
+    .intereses,
+    .contacto {
+        padding: 2rem 1rem;
+    }
+    
+    .presentacion h1 {
+        font-size: 2rem;
+    }
+    
+    .intereses-container {
+        gap: 1rem;
+    }
+    
+    .interes-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .experiencia-laboral table {
+        font-size: 0.9rem;
+    }
+    
+    .experiencia-laboral th,
+    .experiencia-laboral td {
+        padding: 8px;
+    }
+    
+    .formulario-contacto {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intereses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .interes-item {
+        margin-bottom: 1rem;
+    }
+    
+    .social-icon {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .experiencia-laboral table {
+        display: block;
+        overflow-x: auto;
+    }
+}
