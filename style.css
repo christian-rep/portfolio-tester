@@ -68,3 +68,43 @@ body {
     margin: 0 auto;
     line-height: 1.8;
 }
+/* ===== SECCIÓN FORMACIÓN ACADÉMICA ===== */
+.formacion-academica {
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
+
+.formacion-academica h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.formacion-academica h3 {
+    color: #34495e;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.formacion-academica ul {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.formacion-academica li {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    color: #2c3e50;
+}
+
+.formacion-academica li strong {
+    color: #e74c3c;
+}
+
+.formacion-academica p {
+    color: #7f8c8d;
+}
