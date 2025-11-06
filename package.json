@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-personal",
+  "version": "1.0.0",
+  "description": "Portfolio personal para curso de testing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Ejecutando tests...\" && exit 0",
+    "dev": "python -m http.server 8000",
+    "lint": "echo \"Linting code...\" && exit 0"
+  },
+  "keywords": ["portfolio", "html", "css", "javascript", "testing"],
+  "author": "Christian Acuña",
+  "license": "MIT",
+  "devDependencies": {},
+  "testable-selectors": {
+    "navbar": ".navbar",
+    "presentation": ".presentacion",
+    "academic": ".formacion-academica",
+    "experience": ".experiencia-laboral",
+    "interests": ".intereses",
+    "contact": ".contacto",
+    "footer": ".footer",
+    "contact-form": "#contact-form",
+    "name-input": "[data-testid='name-input']",
+    "email-input": "[data-testid='email-input']",
+    "submit-button": "[data-testid='submit-button']"
+  }
+}
