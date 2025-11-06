@@ -1,17 +1,39 @@
 {
-  "name": "portfolio-personal",
+  "name": "portfolio-personal-christian-acuna",
   "version": "1.0.0",
-  "description": "Portfolio personal para curso de testing",
+  "description": "Portfolio personal responsive desarrollado con HTML, CSS y JavaScript vanilla para curso de testing",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Ejecutando tests...\" && exit 0",
+    "start": "python -m http.server 8000",
     "dev": "python -m http.server 8000",
-    "lint": "echo \"Linting code...\" && exit 0"
+    "test": "echo \"Ejecutando tests...\" && exit 0",
+    "lint:html": "echo \"Linting HTML...\" && exit 0",
+    "lint:css": "echo \"Linting CSS...\" && exit 0",
+    "lint:js": "echo \"Linting JavaScript...\" && exit 0",
+    "deploy": "echo \"Preparando despliegue...\" && exit 0"
   },
-  "keywords": ["portfolio", "html", "css", "javascript", "testing"],
-  "author": "Christian Acuña",
-  "license": "MIT",
+  "keywords": [
+    "portfolio",
+    "html",
+    "css",
+    "javascript",
+    "testing",
+    "responsive",
+    "frontend",
+    "web-development"
+  ],
+  "author": {
+    "name": "Christian Acuña",
+    "email": "christian.acu.95@gmail.com",
+    "url": "https://github.com/christian-repo"
+  },
+  
   "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
   "testable-selectors": {
     "navbar": ".navbar",
     "presentation": ".presentacion",
