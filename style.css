@@ -108,3 +108,45 @@ body {
 .formacion-academica p {
     color: #7f8c8d;
 }
+/* ===== SECCIÓN EXPERIENCIA LABORAL ===== */
+.experiencia-laboral {
+    padding: 3rem 2rem;
+    background-color: #ecf0f1;
+}
+
+.experiencia-laboral h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.experiencia-laboral table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #34495e;
+}
+
+.experiencia-laboral th,
+.experiencia-laboral td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+    cell-padding: 5px;
+}
+
+.experiencia-laboral th {
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+}
+
+.experiencia-laboral tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.experiencia-laboral tr:hover {
+    background-color: #e8f4f8;
+}
