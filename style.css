@@ -376,3 +376,102 @@ body {
         overflow-x: auto;
     }
 }
+/* ===== ESTILOS PARA TESTABILIDAD Y ESTADOS ===== */
+
+/* Estados de validación del formulario */
+input:invalid {
+    border-color: #e74c3c;
+}
+
+input:valid {
+    border-color: #27ae60;
+}
+
+input:focus:invalid {
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+input:focus:valid {
+    border-color: #27ae60;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.3);
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    color: #e74c3c !important;
+    font-size: 0.8rem !important;
+    margin-top: 0.25rem !important;
+    display: block;
+}
+
+/* Estados hover y focus para mejor accesibilidad */
+.navbar a:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.btn-enviar:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.social-icon:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .navbar {
+        background-color: #000;
+        border-bottom: 2px solid #fff;
+    }
+    
+    .presentacion {
+        background-color: #fff;
+        border: 1px solid #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .navbar a,
+    .social-icon,
+    .interes-icon {
+        transition: none !important;
+    }
+}
+
+/* Indicadores visuales para testing */
+/*[data-testid] {}
+    /* Este selector ayuda a identificar elementos testables */
+
+
+/* Estilos para el mensaje de formulario */
+.form-message {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
