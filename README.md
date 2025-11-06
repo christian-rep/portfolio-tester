@@ -96,7 +96,7 @@ El proyecto incluye:
 ### Opción 1: Servidor Local
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/portfolio-personal.git
+git clone https://github.com/christian-rep/portfolio-tester.git
 
 # Navegar al directorio
 cd portfolio-personal
@@ -109,3 +109,4 @@ python -m http.server 8000
 
 
 Desarrollado como parte del Curso de Testing - 2025
+
