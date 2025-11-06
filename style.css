@@ -47,3 +47,24 @@ body {
 body {
     padding-top: 60px;
 }
+
+/* ===== SECCIÓN QUIEN SOY ===== */
+.presentacion {
+    background-color: #f0f0f0;
+    padding: 3rem 2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.presentacion h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.presentacion p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
