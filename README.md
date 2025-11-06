@@ -106,7 +106,5 @@ python -m http.server 8000
 
 # Abrir en navegador: http://localhost:8000
 
-
-
 Desarrollado como parte del Curso de Testing - 2025
 

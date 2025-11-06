@@ -132,11 +132,9 @@ body {
 .experiencia-laboral th,
 .experiencia-laboral td {
     border: 1px solid #bdc3c7;
-    padding: 12px;
+    padding: 12px;      
     text-align: left;
-    cell-padding: 5px;
 }
-
 .experiencia-laboral th {
     background-color: #34495e;
     color: white;
