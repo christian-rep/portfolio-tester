@@ -4,8 +4,8 @@
   "description": "Portfolio personal responsive desarrollado con HTML, CSS y JavaScript vanilla para curso de testing",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "dev": "python -m http.server 8000",
+    "start": "npx http-server ./ -p 8000",
+    "dev": "npx http-server ./ -p 8000",
     "test": "echo \"Ejecutando tests...\" && exit 0",
     "lint:html": "echo \"Linting HTML...\" && exit 0",
     "lint:css": "echo \"Linting CSS...\" && exit 0",
